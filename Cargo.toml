@@ -1,0 +1,25 @@
+[package]
+version = "0.1.0"
+edition = "2021"
+name = "poseidon-rust"
+rust-version = "1.75"
+authors = ["TACEO GmbH <hello@taceo.io>"]
+homepage = "https://www.taceo.io"
+repository = "https://github.com/TaceoLabs/poseidon-rust"
+license = "MIT OR Apache-2.0"
+publish = false
+readme = "./README.md"
+
+
+[dependencies]
+ark-bn254 = "0.4"
+ark-ff = "0.4"
+clap = { version = "4.5", features = ["derive"] }
+itertools = "0.13"
+lazy_static = "1.5"
+num-bigint = "0.4"
+num-traits = "0.2"
+thiserror = "1.0"
+
+[dev-dependencies]
+rand = "0.8"
